@@ -1,31 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
     <title>Welcome to Dig Dug</title>
 
     <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main, header, footer {
+            border: 3px solid black;
+            margin:  0 auto;
+            width: 80vw;
+            padding: 1.1rem;
+            background-color: hsl(243, 47%, 71%)
+        }
         h1 { 
-            color:red;
-            font-family: sans-serif;
-            border-bottom: 1px solid blue;
-            }
-        blockquote { 
-            background-color: lightgray;
+            color:#F13E14;
+            font-family: "Lato", sans-serif;
+            border-bottom: 1px solid #ECD444;
+        }
+        body {
+            background-image: url("images/background-dug.png");
+            background-repeat: repeat;
+        }
+        h2 {
+            color:#474392;
+        }
+        a:link {
+            color: rgb(253, 255, 219);
+        } 
+        a:visited {
+            color:  #eeff00;
+        }
+        a:focus {
+            color: #a0ac00;
+        }
+        a:hover {
+            color: #a0ac00;
+        }   
+        a:active {
+            color: #F13E14;
+        }
+        img {
+            border: 4px solid #ECD444;
+            background-color: #ECD444;
+        }
+        ul, blockquote, p {
+            background-color:#48448f;
+            border: 3px solid #343168;
+            color:#DCEDFF;
             padding: 1rem;
-            }
+        }
+        img.side {
+            float: right;
+            margin: 0 12px;
+        }
+        .footerimg {
+            width:5%;
+            background-color: silver;
+        }
+        
     </style>
 </head>
 <body>
 
 <header>
-    <img src="dig-dug-burnt.png" alt="Dig Dug">
+    <img src="images/dig-dug-burnt.png" alt="Dig Dug">
     <h1>Dig Dug</h1>
+    <img src="images/dig-dug.svg" alt="Dig Dug" height=15% width=15%>
 </header>
 
 <main>
 
 <section>
     <h2>Publishing Info</h2>
+
+    <img src="images/dig-dug-cover.jpg" alt="Dig dug game cover" class="side">
 
     <ul>
         <li><strong>Published by</strong>: Atari, Inc.</li>
@@ -35,6 +90,7 @@
 </section>
 <hr>
 <section>
+    <img src="images/fygar_inflate.png" alt="Fygar inflates">
     <h2>Description</h2>
 
     <blockquote>
@@ -67,8 +123,15 @@
 </main>
 
 <footer>
-    Source: 
-    <a href=https://www.mobygames.com/game/arcade/dig-dug>https://www.mobygames.com/game/arcade/dig-dug</a>
+    <p>
+        Source: 
+        <a href=https://www.mobygames.com/game/arcade/dig-dug target="_blank">https://www.mobygames.com/game/arcade/dig-dug</a>
+        <br>
+        <br>
+        Other links:
+        <a href="https://people.rit.edu/blh6705/235/game/big/pic1.html">Dig Dug Image</a>
+        <a href="kirby/index.html"><img class="footerimg" src="kirby/images/kirby-favicon.jpg"></a>
+    </p>
 </footer>
 </body>
 </html>
